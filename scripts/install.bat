@@ -1,0 +1,1 @@
+copy "%~dp0\..\.vimrc" "%systemdrive%%homepath%\.vimrc"
