@@ -46,3 +46,6 @@ set background=dark
 set encoding=utf-8
 set backspace=indent,eol,start
 let g:python_highlight_all = 1
+if has('win32')
+	set shell=powershell
+endif
