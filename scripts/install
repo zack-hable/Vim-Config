@@ -1,2 +1,25 @@
 #!/bin/bash
+
+# force script to stop if we get an error anywhere
+set -o errexit
+
+echo "Copying vimrc file..."
 cp "`pwd`/../.vimrc" ~/.vimrc
+
+echo "Installing Vundle dependencies..."
+sudo apt install -y git curl vim-nox
+
+echo "Installing Vundle..."
+rm -rf ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo "Installing YCM dependencies..."
+sudo apt install -y build-essential cmake python3-dev
+
+echo "Installing Exuberant Ctags..."
+sudo apt install -y exuberant-ctags
+
+echo "Installing plugins with Vundle..."
+vim +PluginInstall +qall
+
+echo "Finished!"

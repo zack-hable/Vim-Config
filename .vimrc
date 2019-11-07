@@ -11,6 +11,12 @@ call vundle#begin('$HOME/.vim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 " You complete me plugin
 Plugin 'Valloric/YouCompleteMe'
+" Whitespace remover/highlighter
+Plugin 'bronson/vim-trailing-whitespace'
+" Better project management/file search
+Plugin 'ctrlpvim/ctrlp.vim'
+" Tag displaying
+Plugin 'majutsushi/tagbar'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -47,5 +53,7 @@ set encoding=utf-8
 set backspace=indent,eol,start
 let g:python_highlight_all = 1
 if has('win32')
-	set shell=powershell
+"	set shell=powershell
 endif
+
+nmap <F8> :TagbarToggle<CR>
