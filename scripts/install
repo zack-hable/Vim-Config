@@ -14,12 +14,16 @@ rm -rf ~/.vim/bundle/Vundle.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "Installing YCM dependencies..."
-sudo apt install -y build-essential cmake python3-dev
+sudo apt install -y build-essential cmake python3-dev libclang-dev
 
 echo "Installing Exuberant Ctags..."
 sudo apt install -y exuberant-ctags
 
 echo "Installing plugins with Vundle..."
 vim +PluginInstall +qall
+
+echo "Running YCM install script..."
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer
 
 echo "Finished!"

@@ -17,6 +17,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Tag displaying
 Plugin 'majutsushi/tagbar'
+" Status bar
+Plugin 'itchyny/lightline.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -57,3 +59,8 @@ if has('win32')
 endif
 
 nmap <F8> :TagbarToggle<CR>
+" Fugitive Conflict Resolution
+nnoremap <leader>gd :Gvdiff<CR>
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>
+set laststatus=2
