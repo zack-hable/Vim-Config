@@ -63,4 +63,8 @@ nmap <F8> :TagbarToggle<CR>
 nnoremap <leader>gd :Gvdiff<CR>
 nnoremap gdh :diffget //2<CR>
 nnoremap gdl :diffget //3<CR>
+" Fix for lightline
 set laststatus=2
+" Make yanks go to null register
+nnoremap d "_d
+vnoremap d "_d
