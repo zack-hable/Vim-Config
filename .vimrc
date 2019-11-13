@@ -68,3 +68,5 @@ set laststatus=2
 " Make yanks go to null register
 nnoremap d "_d
 vnoremap d "_d
+" Relative line numbers
+set relativenumber
