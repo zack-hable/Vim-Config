@@ -70,3 +70,7 @@ nnoremap d "_d
 vnoremap d "_d
 " Relative line numbers
 set relativenumber
+" Line number instead of relative 0
+set number
+" Enable HTML tag jumping
+runtime macros/matchit.vim
