@@ -19,6 +19,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 " Status bar
 Plugin 'itchyny/lightline.vim'
+" Vue JS
+Plugin 'posva/vim-vue'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
