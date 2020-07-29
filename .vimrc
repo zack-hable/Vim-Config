@@ -9,8 +9,8 @@ call vundle#begin('$HOME/.vim/bundle/')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" You complete me plugin
-Plugin 'Valloric/YouCompleteMe'
+" Vim complete me plugin
+Plugin 'ajh17/VimCompletesMe'
 " Whitespace remover/highlighter
 Plugin 'bronson/vim-trailing-whitespace'
 " Better project management/file search
