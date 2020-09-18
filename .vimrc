@@ -76,3 +76,6 @@ set relativenumber
 set number
 " Enable HTML tag jumping
 runtime macros/matchit.vim
+
+" disable auto replace mode from win consoles
+set ambw=double
