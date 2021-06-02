@@ -21,6 +21,11 @@ Plugin 'majutsushi/tagbar'
 Plugin 'itchyny/lightline.vim'
 " Vue JS
 Plugin 'posva/vim-vue'
+" React JS
+Plugin 'maxmellon/vim-jsx-pretty'
+" Markdown preview
+Plugin 'iamcco/markdown-preview.nvim'
+let g:mkdp_auto_start = 0
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
