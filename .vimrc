@@ -26,6 +26,8 @@ Plugin 'maxmellon/vim-jsx-pretty'
 " Markdown preview
 Plugin 'iamcco/markdown-preview.nvim'
 let g:mkdp_auto_start = 0
+" Last place resume
+Plugin 'farmergreg/vim-lastplace'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -81,6 +83,10 @@ set relativenumber
 set number
 " Enable HTML tag jumping
 runtime macros/matchit.vim
+" Enable Persistent undo
+set undofile
+set undodir=~/.vim/undodir
 
 " disable auto replace mode from win consoles
 set ambw=double
+

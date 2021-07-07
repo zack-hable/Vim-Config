@@ -3,6 +3,9 @@
 # force script to stop if we get an error anywhere
 set -o errexit
 
+echo "Making undodir"
+mkdir -p ~/.vim/undodir
+
 echo "Copying vimrc file..."
 cp "`pwd`/../.vimrc" ~/.vimrc
 
